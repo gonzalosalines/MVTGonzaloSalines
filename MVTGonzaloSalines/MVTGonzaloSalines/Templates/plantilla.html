@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MVTGonzaloSalines</title>
+</head>
+<body>
+    <h1 style="color: blue">Les presento mis Familiares:</h1>
+    <p>A continuacion veran los miembros de la familia</p>
+
+    <table class="table table-dark">
+        <thead>
+          <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Edad</th>
+            <th scope="col">Fecha Nacimiento</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!--Se utiliza un for para extraer los datos-->
+            {% for item in listado_familia %}
+          <tr>
+            <td>{{item.nombre}}</td>
+            <td>{{item.edad}} Años</td>
+            <td>{{item.fecha|date:"d-m-Y"}}</td>
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+
+
+
+</body>
+</html>
