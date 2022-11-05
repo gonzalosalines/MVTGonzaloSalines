@@ -13,7 +13,7 @@ def listado_familia(request):
     
     # Se genera un diccionario con la lista
     datos = {
-        "listado_familia": listado_familia,
+        "listado_familia": listado_familia
 
     }
 
