@@ -24,7 +24,7 @@
           <tr>
             <td>{{item.nombre}}</td>
             <td>{{item.edad}} Años</td>
-            <td>{{item.fecha_nacimiento"}}</td>
+            <td>{{item.fecha_nacimiento|date:"Y-m-d"}}</td>
           </tr>
         {% endfor %}
         </tbody>
