@@ -20,5 +20,5 @@ from familiares.views import listado_familia
 
 urlpatterns = [
     path('admin/', admin.site.urls),      
-    path('home', listado_familia),
+    path('', listado_familia),
 ]

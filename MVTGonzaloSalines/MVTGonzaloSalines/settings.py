@@ -55,7 +55,7 @@ ROOT_URLCONF = 'MVTGonzaloSalines.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [r"G:\Gonzalo\Repositorios\MVTGonzaloSalines\MVTGonzaloSalines\MVTGonzaloSalines\templates\plantilla.html"],
+        'DIRS': [r"G:\Gonzalo\Repositorios\MVTGonzaloSalines\MVTGonzaloSalines\MVTGonzaloSalines\Templates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
