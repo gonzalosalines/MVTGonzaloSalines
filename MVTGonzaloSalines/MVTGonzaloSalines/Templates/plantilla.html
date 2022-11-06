@@ -4,25 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      tbody {  
+  font-weight: bold;
+  text-align: center;
+}
+
+p {  
+  font-weight: bold;  
+}
+    </style>
     <title>MVTGonzaloSalines</title>
 </head>
 <body>
     <h1 style="color: blue">Les presento mis Familiares:</h1>
     <p>A continuacion veran los miembros de la familia</p>
 
-    <table class="table table-dark">
+    <table class="table table-dark" border="1px solid black">
         <thead>
           <tr>
-            <th scope="col">Nombre</th>
-            <th scope="col">Edad</th>
-            <th scope="col">Fecha Nacimiento</th>
+            <th scope="col" style="color: green;">Nombre</th>
+            <th scope="col" style="color: green;">Edad</th>
+            <th scope="col" style="color: green;">Fecha Nacimiento</th>
           </tr>
         </thead>
         <tbody>
-          <!--Se utiliza un for para extraer los datos-->
+          
             {% for item in listado_familia %}
           <tr>
-            <td>{{item.nombre}}</td>
+            <td style="font-style: italic;">{{item.nombre}}</td>
             <td>{{item.edad}} Años</td>
             <td>{{item.fecha_nacimiento|date:"Y-m-d"}}</td>
           </tr>
